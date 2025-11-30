@@ -18,6 +18,8 @@ Los casos de prueba fueron previamente **escritos y gestionados en Jira**, y las
 ---
 
 ### Estructura del proyecto
+```
+cypress
 ├─ e2e/
 │   ├─ prueba_api.cy.js
 │   └─ prueba_front.cy.js
@@ -32,7 +34,7 @@ Los casos de prueba fueron previamente **escritos y gestionados en Jira**, y las
 │       └─ pageWishlist.js
 cypress.config.js
 package.json
-
+```
 
 #  **Casos de Prueba Automatizados**
 
