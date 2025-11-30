@@ -11,8 +11,6 @@ Los casos de prueba fueron previamente **escritos y gestionados en Jira**, y las
 
 - **Cypress**  
 - **JavaScript**  
-- **Node.js**  
-- **Mocha / Chai**  
 - **Page Object Model (POM)**  
 - **Postman** (para validación de APIs)  
 - **Jira** (para diseño de casos de prueba)
@@ -34,6 +32,7 @@ Los casos de prueba fueron previamente **escritos y gestionados en Jira**, y las
 │       └─ pageWishlist.js
 cypress.config.js
 package.json
+
 
 #  **Casos de Prueba Automatizados**
 
