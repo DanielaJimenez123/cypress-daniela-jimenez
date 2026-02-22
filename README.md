@@ -1,9 +1,13 @@
-# Proyecto de Testing Automatizado con Cypress  
-### Diseño e Implementación de Software — Tecnicatura en Análisis de Sistemas
+#  QA Automation Project – Frontend & API Testing with Cypress
 
-Este proyecto corresponde a la materia **Diseño e Implementación de Software**, donde se desarrollaron **pruebas funcionales de Frontend y API** usando **Cypress**.
+Este proyecto consiste en la automatización de pruebas funcionales de Frontend y API utilizando Cypress, aplicando buenas prácticas de testing y el patrón Page Object Model (POM).
 
-Los casos de prueba fueron previamente **escritos y gestionados en Jira**, y las validaciones manuales de API se realizaron en **Postman** antes de su automatización.
+Fue desarrollado en el contexto de mi formación en la Tecnicatura en Análisis de Sistemas.
+
+---
+## Objetivo
+
+Validar el correcto funcionamiento de las funcionalidades críticas del sistema mediante pruebas automatizadas, asegurando la calidad del producto.
 
 ---
 
@@ -36,54 +40,33 @@ cypress.config.js
 package.json
 ```
 
-#  **Casos de Prueba Automatizados**
+#  **Casos de prueba automatizados**
 
-##  **API – 3 Casos**
+##  **API Testing**
 
-### **1️. Error al comprar carrito sin token**
-- Método: **POST**
-- Validación:
-  - El endpoint rechaza la compra cuando no se envía un token válido.
-  - Status code y mensaje de error esperado.
+Se automatizaron los siguientes escenarios:
 
----
+- Compra de carrito sin token  
+  Validación de rechazo por falta de autenticación
 
-### **2️. Eliminar carrito sin enviar token**
-- Método: **DELETE**
-- Validación:
-  - El sistema devuelve error al intentar eliminar un carrito sin autenticación.
-  - Verificación del status code y body.
+- Eliminación de carrito sin token  
+  Verificación de status code y mensaje de error
+
+- Login con credenciales inválidas  
+  Validación de manejo correcto de errores
 
 ---
 
-### **3️. Login con credenciales inválidas**
-- Método: **POST**
-- Validación:
-  - Intento de login con usuario/contraseña incorrectos.
-  - Status code 4xx y mensaje de error correspondiente.
+# 🔷 **Frontend Testing**
 
----
+- Compra completa de productos  
+  Flujo end-to-end desde selección hasta checkout
 
-# 🔷 **Frontend – 3 Casos**
+- Gestión de lista de favoritos 
+  Agregar y eliminar productos
 
-### **1️. Comprar carrito exitosamente y visualizar orden de compra**
-- Flujo completo desde agregar productos hasta el checkout.
-- Validación del resumen de compra.
-- Confirmación de que la orden se genera correctamente.
-
----
-
-### **2️. Agregar productos a favoritos y vaciar lista**
-- Agregar varios ítems a la wishlist.
-- Validar que aparecen en la lista.
-- Vaciar favoritos y confirmar que queda vacía.
-
----
-
-### ** 3️. Carrito vacío al iniciar sesión desde la página de Checkout**
-- Intento de compra sin estar logueado.
-- Redirección a login.
-- Verificación de que el carrito vuelve a estar vacío tras iniciar sesión.
+- Intento de compra sin sesión iniciada  
+  Validación de redirección y estado del carrito
 
 ---
 
@@ -98,33 +81,30 @@ package.json
 
 ## Gestión del proyecto
 
-### ** Jira**
-Los 6 casos de prueba fueron definidos en Jira con:
-- Precondiciones
-- Pasos
-- Resultado esperado
+## Los casos de prueba fueron:
 
-### ** Postman**
-Las API fueron validadas manualmente para:
-- Confirmar comportamiento esperado
-- Validar status codes
-- Comprobar estructura de respuesta
-- Detectar errores antes de automatizar
+• Diseñados en Jira  
+• Validados manualmente en Postman  
+• Automatizados en Cypress  
+
 
 ---
+# Sobre mí
+
+Este proyecto forma parte de mi formación como QA Automation Tester.
+
+Actualmente busco mi primera oportunidad profesional en QA.
 
 ##  Autora
 
-**Daniela Jiménez**  
+Daniela Jiménez
 Tecnicatura en Análisis de Sistemas  
 Materia: Diseño e Implementación de Software
 
 ---
 
-## Repositorio
-
-*https://github.com/DanielaJimenez123/cypress-daniela-jimenez.git*
-
+## LinkedIn  
+https://www.linkedin.com/in/daniela-jiménez-miranda-321a0a35b
 
 
 
